@@ -1,2 +1,2 @@
 //= require store/spree_core
-//= require jquery.vticker-min.js
+//= require query.newsTicker-2.3.6.js

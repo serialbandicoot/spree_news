@@ -2,20 +2,14 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.news-ticker {
-  h3 {
-    color: #00ADEE;
-  }
-  background: white;
+#news h6 {
+    color: black
 }
 
-#news-container {
-  margin-top: -20px;
-}
-
-#news-container ul li div {
-  min-height: 30px;
-  background: white;
-  text-align:left;
+#news li {
+    color: #2E6AB1;
+    /*list-style-type: none;*/
+    list-style-image:url('tweet.gif');
+    font-weight:bold;
 }
 
