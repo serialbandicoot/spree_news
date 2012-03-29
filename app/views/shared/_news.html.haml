@@ -1,13 +1,13 @@
-- if Spree::Post.all.any?
+- if Spree::Tick.all.any?
   .news
     %p
     #news
       %ul
-        - Spree::Post.published.each do |post|
+        - Spree::Tick.published.each do |tick|
           %li#news
-            %b= post.created_at.strftime("%B %d, %Y")
+            %b= tick.created_at.strftime("%B %d, %Y")
             = ': '
-            = post.description
+            = tick.description
 
 :javascript
   $(document).ready(function() {

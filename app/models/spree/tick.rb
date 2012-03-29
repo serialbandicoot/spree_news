@@ -1,4 +1,4 @@
-class Spree::Post < ActiveRecord::Base
+class Spree::Tick < ActiveRecord::Base
   validates_presence_of :description
 #  validates_length_of :description, :maximum => 150
 

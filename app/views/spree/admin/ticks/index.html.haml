@@ -1,0 +1,18 @@
+= render :partial => 'spree/admin/shared/configuration_menu'
+%h1 Ticks
+.new-tick= button_link_to 'New Tick', new_object_url, :icon => 'add', :id => 'admin_new_tick_link'
+
+%table.index#listing_ticks
+  %thead
+    %th Name
+    %th Text
+    %th
+    %th
+  %tbody
+    - @ticks.each do |tick|
+      %tr
+        %td= link_to tick.title, object_url(tick)
+        %td= tick.description.html_safe
+        %td= link_to_edit tick
+        %td= link_to_delete tick
+

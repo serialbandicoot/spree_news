@@ -1,6 +1,6 @@
-class CreatePosts < ActiveRecord::Migration
+class CreateTicks < ActiveRecord::Migration
   def change
-    create_table :spree_posts do |t|
+    create_table :spree_ticks do |t|
       t.string :title
       t.string :description
       t.boolean :published
