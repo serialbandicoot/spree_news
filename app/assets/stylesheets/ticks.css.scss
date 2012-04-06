@@ -6,10 +6,17 @@
     color: black
 }
 
+
+@-moz-document url-prefix() {
+ #news_ticker {
+    padding-left: 50px;
+    }
+}
+
 #news li {
     color: #2E6AB1;
     /*list-style-type: none;*/
-    list-style-image:url('tweet.gif');
+    list-style-image:url('peck.gif');
     font-weight:bold;
 }
 
