@@ -3,4 +3,6 @@ class Spree::Tick < ActiveRecord::Base
 #  validates_length_of :description, :maximum => 150
 
   scope :published, lambda { where(:published => true) }
+  attr_accessible :title, :description, :published
 end
+
